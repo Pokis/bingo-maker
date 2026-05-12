@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Bingo Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="glass-panel" style="width: 100%; max-width: 1000px;">
+        <h1>BINGO MAKER</h1>
+        <p class="subtitle">Generate, Play, and Print your custom Bingo cards!</p>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="themeSelect">Theme</label>
+                <select id="themeSelect">
+                    <!-- Options populated by JS -->
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="seedInput">Game Seed</label>
+                <div style="display: flex; gap: 0.5rem;">
+                    <input type="text" id="seedInput" placeholder="Enter seed..." style="flex: 1; min-width: 0;">
+                    <button id="randomSeedBtn" title="Random Seed" style="flex-shrink: 0;">🎲</button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="bgUpload">Custom Background</label>
+                <input type="file" id="bgUpload" accept="image/*" style="width: 100%; text-overflow: ellipsis; overflow: hidden;">
+            </div>
+
+            <div class="control-group" style="flex-direction: row; flex-wrap: wrap; align-items: flex-end; gap: 0.5rem; justify-content: center;">
+                <button id="generateBtn" style="flex: 1; min-width: 150px;">Generate Card</button>
+                <button id="printBtn" class="secondary" style="flex: 1; min-width: 100px;">🖨️ Print</button>
+                <button id="openThemeCreatorBtn" class="secondary" style="flex: 1; min-width: 150px;">✨ Create Theme</button>
+            </div>
+        </div>
+
+        <div class="bingo-wrapper">
+            <div id="bingoBoard" class="bingo-board">
+                <!-- Cells populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebration Overlay -->
+    <div id="celebrationOverlay" class="celebration-overlay">
+        <div class="bingo-text">BINGO!</div>
+        <button id="continueBtn" class="continue-btn">Keep Playing</button>
+    </div>
+
+    <!-- Theme Creator Modal -->
+    <div id="themeModal" class="modal">
+        <div class="glass-panel modal-content">
+            <div class="modal-header">
+                <h2>Create New Theme</h2>
+                <button id="closeThemeModalBtn" class="close-btn">✖</button>
+            </div>
+            
+            <div class="control-group">
+                <label for="newThemeName">Theme Name</label>
+                <input type="text" id="newThemeName" placeholder="e.g. Office Meeting">
+            </div>
+
+            <div class="control-group" style="margin-top: 1rem;">
+                <label for="newThemeEntries">Entries (one per line, minimum 24)</label>
+                <textarea id="newThemeEntries" placeholder="Enter bingo options here..."></textarea>
+            </div>
+
+            <p style="font-size: 0.8rem; margin-bottom: 1rem; opacity: 0.8;">
+                This will generate a `.js` file. Save it in the <code>themes/</code> folder and add it to <code>index.html</code> as a script tag!
+            </p>
+
+            <button id="exportThemeBtn" style="width: 100%;">Download Theme File</button>
+        </div>
+    </div>
+
+    <!-- Load themes -->
+    <script src="themes/eurovision.js"></script>
+    
+    <!-- Main logic -->
+    <script src="script.js"></script>
+</body>
+</html>
