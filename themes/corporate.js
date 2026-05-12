@@ -1,0 +1,26 @@
+window.BINGO_THEMES = window.BINGO_THEMES || {};
+window.BINGO_THEMES["Corporate"] = [
+    "Circle back", "Synergy", "Alignment", "Low-hanging fruit", "Touch base",
+    "Deep dive", "Take this offline", "Moving the needle", "Bandwidth", "Value-add",
+    "Think outside the box", "Paradigm shift", "Win-win situation", "Best practices", "Scalability",
+    "Agile", "Pivot", "KPIs", "OKRs", "Stakeholder management",
+    "Technical debt", "Scope creep", "Sprint planning", "Backlog grooming", "Retrospective",
+    "Deployment fail", "Legacy code", "CI/CD pipeline", "Architecture review", "Documentation is missing",
+    "One-on-one", "Performance review", "Onboarding", "Offboarding", "Cultural fit",
+    "Can you see my screen?", "You're on mute", "Awkward silence", "Background noise (dog/child)", "Frozen video",
+    "Someone joins 5 mins late", "Echoing audio", "Chat used for memes", "Unexpected meeting invite", "Meeting that could have been an email",
+    "Let's give everyone 5 mins back", "Drinking coffee on camera", "Pet makes a cameo", "Someone forgot to stop sharing", "LinkedIn humble brag",
+    "Ping during a presentation", "Empty kitchen", "Coffee machine needs cleaning", "Fridge smells", "Hot desking",
+    "Birthday cake in the kitchen", "Over-enthusiastic HR email", "Work-life balance (ironically mentioned)", "Disruptive innovation", "Game-changer",
+    "Holistic approach", "Buy-in", "Drill down", "At the end of the day", "Big picture",
+    "Leverage", "Actionable insights", "Customer-centric", "Employee engagement", "Robust solution",
+    "Seamless integration", "Cutting-edge", "Mission-critical", "Next steps", "Visibility",
+    "Empowerment", "Core competency", "Thought leader", "Best-in-class", "State-of-the-art",
+    "User experience", "Pain points", "Bottle-neck", "Go-to-market", "Bandwidth issues",
+    "Out of the loop", "Ping me", "Circle the wagons", "Duck in a row", "Boil the ocean",
+    "Move the goalposts", "Drink the Kool-Aid", "Keep me posted", "Reinvent the wheel", "On the same page",
+    "Hard stop at the hour", "Double-click on that", "Table this for now", "Heavy lifting", "Unpack that",
+    "In the weeds", "High-level summary", "Bottom line", "Deck (PowerPoint)", "Town hall",
+    "Offsite", "Team bonding", "Water cooler talk", "Fire drill (fake emergency)", "ASAP",
+    "Going forward", "Net-net", "Organic growth", "Synergistic", "Verticals"
+];

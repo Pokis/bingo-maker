@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultimate Bingo Maker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+
     <div class="glass-panel" style="width: 100%; max-width: 1000px;">
         <h1>BINGO MAKER</h1>
         <p class="subtitle">Generate, Play, and Print your custom Bingo cards!</p>
@@ -19,7 +21,7 @@
                     <!-- Options populated by JS -->
                 </select>
             </div>
-            
+
             <div class="control-group">
                 <label for="seedInput">Game Seed</label>
                 <div style="display: flex; gap: 0.5rem;">
@@ -30,13 +32,16 @@
 
             <div class="control-group">
                 <label for="bgUpload">Custom Background</label>
-                <input type="file" id="bgUpload" accept="image/*" style="width: 100%; text-overflow: ellipsis; overflow: hidden;">
+                <input type="file" id="bgUpload" accept="image/*"
+                    style="width: 100%; text-overflow: ellipsis; overflow: hidden;">
             </div>
 
-            <div class="control-group" style="flex-direction: row; flex-wrap: wrap; align-items: flex-end; gap: 0.5rem; justify-content: center;">
+            <div class="control-group"
+                style="flex-direction: row; flex-wrap: wrap; align-items: flex-end; gap: 0.5rem; justify-content: center;">
                 <button id="generateBtn" style="flex: 1; min-width: 150px;">Generate Card</button>
                 <button id="printBtn" class="secondary" style="flex: 1; min-width: 100px;">🖨️ Print</button>
-                <button id="openThemeCreatorBtn" class="secondary" style="flex: 1; min-width: 150px;">✨ Create Theme</button>
+                <button id="openThemeCreatorBtn" class="secondary" style="flex: 1; min-width: 150px;">✨ Create
+                    Theme</button>
             </div>
         </div>
 
@@ -60,7 +65,7 @@
                 <h2>Create New Theme</h2>
                 <button id="closeThemeModalBtn" class="close-btn">✖</button>
             </div>
-            
+
             <div class="control-group">
                 <label for="newThemeName">Theme Name</label>
                 <input type="text" id="newThemeName" placeholder="e.g. Office Meeting">
@@ -72,7 +77,8 @@
             </div>
 
             <p style="font-size: 0.8rem; margin-bottom: 1rem; opacity: 0.8;">
-                This will generate a `.js` file. Save it in the <code>themes/</code> folder and add it to <code>index.html</code> as a script tag!
+                This will generate a `.js` file. Save it in the <code>themes/</code> folder and add it to
+                <code>index.html</code> as a script tag!
             </p>
 
             <button id="exportThemeBtn" style="width: 100%;">Download Theme File</button>
@@ -81,8 +87,17 @@
 
     <!-- Load themes -->
     <script src="themes/eurovision.js"></script>
-    
+    <script src="themes/corporate.js"></script>
+    <script src="themes/fitness.js"></script>
+    <script src="themes/gaming.js"></script>
+    <script src="themes/travel.js"></script>
+    <script src="themes/action_movies.js"></script>
+    <script src="themes/reality_tv.js"></script>
+    <script src="themes/rom_coms.js"></script>
+    <script src="themes/family_dinner.js"></script>
+
     <!-- Main logic -->
     <script src="script.js"></script>
 </body>
+
 </html>
