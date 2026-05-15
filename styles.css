@@ -151,6 +151,7 @@ button.secondary:hover {
 .bingo-board {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 10px;
   width: 100%;
   aspect-ratio: 1 / 1; /* Keep it square-ish */
@@ -173,6 +174,9 @@ button.secondary:hover {
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  word-break: break-word;
+  hyphens: auto;
+  line-height: 1.2;
 }
 
 .bingo-cell:hover {
@@ -331,19 +335,58 @@ textarea {
 }
 
 /* Responsive */
+.action-buttons {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.action-buttons button {
+  flex: 1;
+  min-width: 120px;
+}
+
 @media (max-width: 768px) {
+  body {
+    padding: 1rem 0.5rem;
+  }
+  .glass-panel {
+    padding: 1.2rem;
+    border-radius: 1rem;
+  }
   .bingo-board {
-    gap: 5px;
+    gap: 4px;
   }
   .bingo-cell {
-    font-size: 0.7rem;
-    padding: 0.25rem;
+    font-size: 0.65rem;
+    padding: 0.2rem;
+    border-radius: 6px;
+    line-height: 1.1;
+  }
+  .bingo-cell.crossed::after {
+    height: 3px;
+  }
+  .bingo-cell.free-space {
+    font-size: 0.85rem;
   }
   h1 {
     font-size: 2rem;
   }
   .controls {
     flex-direction: column;
+    gap: 1rem;
+  }
+  .control-group {
+    min-width: 100%;
+    flex: 1 1 100%;
+  }
+  .action-buttons button {
+    min-width: 100px;
+  }
+  .bingo-text {
+    font-size: 4rem;
   }
 }
 
