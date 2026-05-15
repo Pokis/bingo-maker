@@ -364,10 +364,13 @@ textarea {
   }
   .bingo-board {
     gap: 4px;
+    aspect-ratio: auto;
+    grid-template-rows: none;
+    grid-auto-rows: 1fr;
   }
   .bingo-cell {
-    font-size: 0.65rem;
-    padding: 0.2rem;
+    font-size: clamp(0.55rem, 2vw, 0.7rem);
+    padding: 0.25rem 0.15rem;
     border-radius: 6px;
     line-height: 1.1;
   }
