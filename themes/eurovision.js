@@ -47,5 +47,14 @@ window.BINGO_THEMES["Eurovision"] = [
     "A costume that requires the singer to have handlers to move",
     "An outfit that looks like a high-end garbage bag",
     "A country gets surprisingly high points from the jury but almost nothing from the public",
-    "A song with a tempo change so severe it feels like two different tracks"
+    "A song with a tempo change so severe it feels like two different tracks",
+	"Someone wearing a hat", 
+    "Someone in the audience with flag facepaint", 
+    "Thanking host country for a wonderful evening", 
+    "Feathers", 
+    "Something goes wrong", 
+    "Clappy bit!", 
+    "Presenter struggling to fill time", 
+    "This sounds like a song from the 90s", 
+    "Sunglasses indoors" 
 ];
