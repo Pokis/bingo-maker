@@ -36,5 +36,16 @@ window.BINGO_THEMES["Eurovision"] = [
     "Postcard video makes a mundane activity look like an epic quest",
     "Host forces a TikTok trend", "Backing vocals are louder than the lead singer",
     "Rhyming 'Tonight' with 'Light' or 'Right'",
-    "Lyrics that make zero grammatical sense", "Song ends abruptly on a random dramatic note"
+    "Lyrics that make zero grammatical sense", "Song ends abruptly on a random dramatic note",
+    "Backup dancer wearing a completely different outfit style than the singer",
+    "A song that starts as a acoustic ballad and suddenly becomes a club anthem",
+    "Singer uses a microphone stand as a dramatic prop",
+    "A reveal that involves taking off a hat or mask",
+    "Performer lying completely flat on the stage",
+    "A prop that looks like it was stolen from a sci-fi movie set",
+    "Pyrotechnics go off perfectly in sync with a drum hit",
+    "A costume that requires the singer to have handlers to move",
+    "An outfit that looks like a high-end garbage bag",
+    "A country gets surprisingly high points from the jury but almost nothing from the public",
+    "A song with a tempo change so severe it feels like two different tracks"
 ];
